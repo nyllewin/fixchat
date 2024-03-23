@@ -1,0 +1,10 @@
+# Ignore everything in the root folder
+/*
+
+# But not these files...
+!.gitignore
+
+# Include fixchat directory and specific files within it
+!/fixchat
+!/fixchat/fixchat.lua
+!/fixchat/fixchat.toc

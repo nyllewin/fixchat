@@ -1,0 +1,8 @@
+## Interface: 110365
+## Title: FixChat
+## Notes: idk devs afk
+## Author: nylle
+## Version: 0.01.1
+## SavedVariables: FixChatDB
+## Dependencies:
+fixchat.lua
