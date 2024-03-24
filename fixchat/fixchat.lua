@@ -1,5 +1,4 @@
 local fxuf = CreateFrame("Frame", "whyarewefixingthisgamewhenalltheydoisoutsourcedevworktoindiaorwhatevertheheck")
---uf:RegisterEvent("ZONE_CHANGED")
 fxuf:RegisterEvent("PLAYER_ENTERING_WORLD")
 fxuf:RegisterEvent("PLAYER_LOGIN")
 
@@ -15,8 +14,6 @@ end
 SLASH_FIXCHAT1 = "/fixchat"
 SlashCmdList["FIXCHAT"] = SlashCmdList_FIXCHAT
 
-
--- yes this is a global function so it can be called whenever whereever if needed
 function FIxchat() -- 1,2(combatlog),4,5,6 / idk where 3 went
     local charname = select(1,UnitName("player"))
 
