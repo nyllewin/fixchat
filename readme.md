@@ -6,7 +6,7 @@ I'm just gonna put them here aswell I guess.
 
     -- set this up for yourself im not gonna bother with UI
     -- add if statements like this where the charname is the charname you want to run it for and get.. 4hed ..
-    -- the ChatFrameX from either logging in or calling the function like this /run FUckblizzard() in your chat
+    -- the ChatFrameX from either logging in or calling the function like this /fixchat in your chat
 
     -- ChatFrame_RemoveChannel removes a channel from being visible for that frame,..
     -- it does NOT leave the channel so you can always toggle them back manually via default UI or idk in here or whatev
