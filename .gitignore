@@ -1,6 +1,6 @@
 # Ignore everything in the root folder
 /*
-
+/fixchat/.vscode
 # But not these files...
 !.gitignore
 
