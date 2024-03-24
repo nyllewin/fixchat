@@ -3,14 +3,22 @@ local fxuf = CreateFrame("Frame", "whyarewefixingthisgamewhenalltheydoisoutsourc
 fxuf:RegisterEvent("PLAYER_ENTERING_WORLD")
 fxuf:RegisterEvent("PLAYER_LOGIN")
 
+-- mv debug/setup to here
+local function SlashCmdList_FIXCHAT()
+    if NUM_CHAT_WINDOWS then
+        for i=1,NUM_CHAT_WINDOWS do
+            _G['ChatFrame'..i]:AddMessage('ChatFrame'..i)
+        end
+        FIxchat()
+    end
+end
+SLASH_FIXCHAT1 = "/fixchat"
+SlashCmdList["FIXCHAT"] = SlashCmdList_FIXCHAT
+
+
 -- yes this is a global function so it can be called whenever whereever if needed
 function FIxchat() -- 1,2(combatlog),4,5,6 / idk where 3 went
     local charname = select(1,UnitName("player"))
-
-    --debug dn
-    for i=1,NUM_CHAT_WINDOWS do
-       _G['ChatFrame'..i]:AddMessage('ChatFrame'..i)
-    end
 
     -- set this up for yourself im not gonna bother with UI
     -- add if statements like this where the charname is the charname you want to run it for and get.. 4hed ..
@@ -24,7 +32,7 @@ function FIxchat() -- 1,2(combatlog),4,5,6 / idk where 3 went
     -- to add this for a second character just copy this statement until the end and paste after the end...
     -- attention: maybe ChatFrame4 on your previous char is not ChatFrame4 on your new one so double check and adjust.
 
-    if charname == 'Beledelphine' then
+    if charname == 'yourcharnamehere' then
 
         ChatFrame_RemoveChannel(ChatFrame1, "Services");
         ChatFrame_RemoveChannel(ChatFrame1, "Trade");
