@@ -1,3 +1,5 @@
+// not needed anymore (for now)
+
 wow addon to fix blizzards latest dumpsterfire patch, blunderstorm.
 
 make sure to read the comments in fixchat.lua as this does require manual setup but avoids everything that could taint ui or cause bugs.
